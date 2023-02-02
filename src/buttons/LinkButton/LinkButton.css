@@ -1,0 +1,47 @@
+.link-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: max-content;
+}
+.link {
+    cursor: pointer;
+
+    text-transform: uppercase;
+    transition: all 0.3s cubic-bezier(.645, .045, .355, 1);
+    position: relative;
+    padding: 15px 0;
+}
+
+.link:hover::before {
+    width: 100%;
+}
+
+.link::before{
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 0;
+    height: 2px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    bottom: 0;
+}
+
+.link-primary {
+    color: #f9004d;
+}
+
+.link-primary::before {
+    background:  #f9004d;
+}
+
+.link-secondary {
+    color: #1f1f25;
+}
+
+.link-secondary::before {
+    background:  #1f1f25;
+}

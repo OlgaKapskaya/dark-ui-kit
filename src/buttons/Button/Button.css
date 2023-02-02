@@ -16,11 +16,11 @@
     border: none;
 }
 
-.primary {
+.button-primary {
     background: #f9004d;
     color: #FFF;
 }
-.primary:hover {
+.button-primary:hover {
     border: 2px solid #f9004d;
     background-color: transparent;
     color: #f9004d;
@@ -28,12 +28,12 @@
     transition: 0.3s;
 }
 
-.secondary {
+.button-secondary {
     background: #1f1f25;
     color: #FFF;
 }
 
-.secondary:hover {
+.button-secondary:hover {
     border: 2px solid #1f1f25;
     background-color: transparent;
     color: #1f1f25;
