@@ -8,13 +8,14 @@ type ButtonType = DefaultButtonPropsType & {
     color?: 'primary' | 'secondary'
 }
 
-
 /**
- * color: primary (default) or 'secondary'. The color of the component.
+ * color: primary (default) or secondary. The color of the component.
  */
 
-export const Button: FC<ButtonType> = ({color, disabled, ...restProps}) => {
-    const finallyClassName = disabled ? disabled : color === 'secondary' ? color : 'primary'
+export const Button: FC<ButtonType> = ({color,  disabled, ...restProps}) => {
+
+    const finallyColor = color === 'secondary' ? color : 'primary'
+    const finallyClassName = disabled ? disabled : `${finallyColor}`
 
     return <button className={`button ${disabled ? disabled : finallyClassName}`}
                    disabled={disabled}
