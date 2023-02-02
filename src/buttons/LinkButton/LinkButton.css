@@ -9,6 +9,7 @@
     cursor: pointer;
 
     text-transform: uppercase;
+    text-decoration: none;
     transition: all 0.3s cubic-bezier(.645, .045, .355, 1);
     position: relative;
     padding: 15px 0;
