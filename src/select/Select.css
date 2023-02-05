@@ -23,10 +23,12 @@
 .select-wrapper-img-down {
     rotate: 0deg;
     transition: 0.10s;
+    color: #f9004d;
 }
 .select-wrapper-options-container {
     position: absolute;
     width: 300px;
+    color: #f9004d;
 }
 
 .select-wrapper-options {

@@ -59,7 +59,7 @@ export const Select: FC<SelectType> = ({value, options, onChange}) => {
                  onKeyUp={onKeyUpItemHandler}
             >
                 <span>{value}</span>
-                {/*<img src={img} className={isVisible ? 'select-wrapper-img-up' : 'select-wrapper-img-down'} alt='arrow'/>*/}
+                {/*<img src={arrow} className={isVisible ? 'select-wrapper-img-up' : 'select-wrapper-img-down'} alt='arrow'/>*/}
             </div>
             <div className='select-wrapper-options-container'>
                 {isVisible && options.map(elem => {
